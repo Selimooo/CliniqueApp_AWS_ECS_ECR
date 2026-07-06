@@ -1,0 +1,23 @@
+<h2>Add Patient</h2>
+
+<form (ngSubmit)="savePatient()">
+
+  <label>First Name</label>
+  <input [(ngModel)]="patient.firstName" name="firstName" required />
+  <br/>
+
+  <label>Last Name</label>
+  <input [(ngModel)]="patient.lastName" name="lastName" required />
+  <br/>
+
+  <label>Email</label>
+  <input [(ngModel)]="patient.email" name="email" required />
+  <br/>
+
+  <label>Phone Number</label>
+  <input [(ngModel)]="patient.phoneNumber" name="phoneNumber" />
+  <br/>
+
+  <button type="submit">Save</button>
+
+</form>

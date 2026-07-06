@@ -1,0 +1,13 @@
+<div class="container">
+  <h2 class="title">Patients List</h2>
+
+  <button class="add-btn" routerLink="/patients/add">+ Add Patient</button>
+  <div class="list">
+    <div class="card" *ngFor="let p of patients">
+      <div class="name">{{ p.firstName }} {{ p.lastName }}</div>
+      <div class="email">
+        {{ p.email }}
+      </div>
+    </div>
+  </div>
+</div>
